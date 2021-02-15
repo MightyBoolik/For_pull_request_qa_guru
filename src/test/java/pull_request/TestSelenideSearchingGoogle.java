@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class TestSelenideSearchingGoogle {
 
         @Test
-        void selenideSearchTest() {
+        void selenideInGoogleTest() {
             open("https://www.google.com/");
             $(byName("q")).setValue("Selenide").pressEnter();
             $("#search").shouldHave(text("selenide.org"));
